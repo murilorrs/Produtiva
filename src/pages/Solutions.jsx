@@ -1,8 +1,10 @@
 import React from "react";
 
+import './paginas.css'
+
 const Solutions = () => {
   return(
-    <div>
+    <div className="conteudo_geral">
       <h2>Home</h2>
 
 

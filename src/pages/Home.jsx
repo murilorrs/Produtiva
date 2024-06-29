@@ -1,22 +1,31 @@
-// Home.jsx
 import React from "react";
 
-import './Pages.css'
+import './paginas.css'
+import pivo from '../assets/irrigacao.jpg'
 
 const Home = () => {
   return (
-    <div className="div">
-      <h1>treste</h1>
-      <h1>treste</h1>
-      <h1>treste</h1>
-      <h1>treste</h1>
-      <h1>treste</h1>
-      <h1>treste</h1>
-      <h1>treste</h1>
-      <h1>treste</h1>
-      <h1>treste</h1>
-      <h1>treste</h1>
-      <img src="https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.goannaag.com.au%2Fgofield&psig=AOvVaw3tL2eBb-aF04dDpJT0P93b&ust=1719732102643000&source=images&cd=vfe&opi=89978449&ved=0CBEQjRxqFwoTCMCm2b2jgIcDFQAAAAAdAAAAABAE" alt="" />
+    <div className="conteudo_geral">
+      {/* <h2 className="frase-logo">Ainda há tempo de lucrar mais <br></br>com menos</h2> */}
+      <img className="imagem_pivo" src={pivo} alt="" />
+      <div className="conteudo-principal">
+        <h2>POR QUE IRRIGAÇÂO <span>PRODUTIVA?</span></h2>
+        <div className="paragrafo">
+          <h3>Lorem</h3>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum eaque perspiciatis porro pariatur aut amet, laboriosam quos cumque ullam? Delectus eum repellendus tempora excepturi aliquid, eaque tenetur et magnam vel!</p>
+        </div>
+
+        <div className="paragrafo">
+          <h3>Ipsun</h3>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum eaque perspiciatis porro pariatur aut amet, laboriosam quos cumque ullam? Delectus eum repellendus tempora excepturi aliquid, eaque tenetur et magnam vel!</p>
+        </div>
+
+        <div className="paragrafo">
+          <h3>dolor</h3>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum eaque perspiciatis porro pariatur aut amet, laboriosam quos cumque ullam? Delectus eum repellendus tempora excepturi aliquid, eaque tenetur et magnam vel!</p>
+        </div>
+        
+      </div>
     </div>
   );
 };

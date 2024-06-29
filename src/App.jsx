@@ -1,6 +1,7 @@
 import './App.css'
 import Routes from './Routes'
 import Nav from './modules/Nav.jsx'
+import Footer from './modules/Footer.jsx'
 
 function App() {
 
@@ -9,6 +10,7 @@ function App() {
     <>
       <Nav/>
       <Routes/>
+      <Footer />
     </>
   )
 }

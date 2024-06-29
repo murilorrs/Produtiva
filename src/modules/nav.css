@@ -2,7 +2,7 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  position: fixed;
+  position: relative;
   background: #fff;
   color: #000000;
   padding: 20px;
@@ -52,7 +52,7 @@
   content: '';
   display: block;
   width: 0;
-  height: 1.5px;
+  height: 1.7px;
   background: #4caf4f62;
   transition: width 300ms ease-in-out;
   position: absolute;
