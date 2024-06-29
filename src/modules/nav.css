@@ -1,0 +1,84 @@
+.navegacao {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: fixed;
+  background: #fff;
+  color: #000000;
+  padding: 20px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  width: 100%;
+  z-index: 1000;
+
+}
+
+.navegacao h1 {
+  margin: 0;
+  font-size: 29px;
+  font-weight: bold;
+  color: #4CAF50;
+}
+
+
+.navegacao ul {
+  display: flex;
+  list-style: none;
+  gap: 15px;
+}
+
+.navegacao ul li {
+  padding: 10px 0px;
+  cursor: pointer;
+  margin-right: 10px;
+}
+
+
+.navegacao ul li p {
+  margin: 0;
+  font-size: 17px;
+  color: #312626;
+  padding: 5px;
+  transition: 300ms ease-in-out;
+}
+
+.navegacao ul li:hover p {
+  color: #4CAF50;
+  background: #e6e6e6;
+  padding: 5px;
+  border-radius: 5px;
+}
+
+.navegacao ul li::after {
+  content: '';
+  display: block;
+  width: 0;
+  height: 1.5px;
+  background: #4caf4f62;
+  transition: width 300ms ease-in-out;
+  position: absolute;
+  bottom: -2px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.navegacao ul li:hover::after {
+  width: 100%;
+}
+
+@media (max-width: 768px) {
+  .navegacao {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .navegacao ul {
+    flex-direction: column;
+    gap: 10px;
+    width: 100%;
+  }
+
+  .navegacao ul li {
+    width: 100%;
+    text-align: left;
+  }
+}

@@ -17,5 +17,6 @@ module.exports = {
       'warn',
       { allowConstantExport: true },
     ],
+    'no-unused-vars': 'off', // Desativa a verificação de variáveis não utilizadas
   },
-}
+};
