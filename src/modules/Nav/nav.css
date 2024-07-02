@@ -1,0 +1,130 @@
+/* Estilo Geral da Navegação */
+.navegacao {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: relative;
+  background: #fff;
+  color: #000000;
+  padding: 20px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  width: 100%;
+  z-index: 1000;
+}
+
+/* Estilo para o Título */
+.navegacao .titulo {
+  margin: 0;
+  font-size: 29px;
+  font-weight: bold;
+  color: #95b128;
+  text-decoration: none;
+}
+
+/* Estilo para a Lista de Links */
+.navegacao ul {
+  display: flex;
+  list-style: none;
+  gap: 15px;
+  padding: 0;
+  margin: 0;
+}
+
+/* Estilo para os Itens da Lista */
+.navegacao ul li {
+  position: relative;
+  padding: 10px 0;
+  margin-right: 10px;
+}
+
+/* Estilo para os Links */
+.navegacao ul li a {
+  margin: 0;
+  font-size: 17px;
+  color: #575757;
+  padding: 5px;
+  text-decoration: none;
+  /* Remove o sublinhado dos links */
+  transition: color 300ms ease-in-out, background 300ms ease-in-out;
+}
+
+/* Estilo para o Hover dos Links */
+.navegacao ul li a:hover {
+  color: #95b128;
+  background: #e6e6e6;
+  padding: 5px;
+  border-radius: 5px;
+}
+
+/* Estilo para o Indicador de Hover */
+.navegacao ul li::after {
+  content: '';
+  display: block;
+  width: 0;
+  height: 1.7px;
+  background: #95b128;
+  transition: width 300ms ease-in-out;
+  position: absolute;
+  bottom: -2px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+/* Expansão do Indicador de Hover */
+.navegacao ul li:hover::after {
+  width: 100%;
+}
+
+/* Estilo do Menu Responsivo */
+.menu-toggle {
+  display: none;
+  /* Esconde por padrão em telas maiores */
+  font-size: 24px;
+  cursor: pointer;
+}
+
+/* Estilo para Telas Menores */
+@media (max-width: 768px) {
+  .navegacao {
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 10px;
+    /* Reduz o padding para economizar espaço */
+  }
+
+  .navegacao ul {
+    display: none;
+    /* Esconde a lista por padrão em telas menores */
+    flex-direction: column;
+    gap: 10px;
+    width: 100%;
+    padding: 0;
+    margin: 0;
+  }
+
+  .navegacao ul li {
+    width: 100%;
+    text-align: left;
+  }
+
+  .menu-toggle {
+    display: block;
+    /* Mostra o ícone do menu em telas menores */
+  }
+
+  /* Mostra a lista de links quando o menu está aberto */
+  .menu-open .navegacao ul {
+    display: flex;
+  }
+}
+
+
+/* Mostra a lista de links quando o menu está aberto */
+.navegacao .show-menu {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  width: 100%;
+  padding: 0;
+  margin: 0;
+}
