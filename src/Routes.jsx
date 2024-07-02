@@ -6,8 +6,8 @@ import About from "./pages/About/About";
 import Methodology from "./pages/Metodologia/Methodology";
 import Solutions from "./pages/Solutions";
 import Blog from "./pages/Blog";
-import Careers from "./pages/Careers";
-import Contact from "./pages/Contact";
+import Careers from "./pages/Careers/Careers";
+import Contact from "./pages/Contact/Contact";
 
 const Rotas = () => {
   return (

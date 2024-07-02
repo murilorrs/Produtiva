@@ -1,11 +1,10 @@
 import React from "react";
+import Form from '../../modules/Form'
 
 const Careers = () => {
   return(
     <div>
-      <h2>Home</h2>
-
-
+      <Form/>
     </div>
   )
 }
