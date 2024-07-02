@@ -1,10 +1,10 @@
 // Routes.jsx
 import React from "react";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
-import Home from './pages/Home'
-import About from "./pages/About";
+import Home from './pages/Home/Home'
+import About from "./pages/About/About";
+import Methodology from "./pages/Metodologia/Methodology";
 import Solutions from "./pages/Solutions";
-import Methodology from "./pages/Methodology";
 import Blog from "./pages/Blog";
 import Careers from "./pages/Careers";
 import Contact from "./pages/Contact";
