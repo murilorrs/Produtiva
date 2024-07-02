@@ -1,0 +1,51 @@
+.conteudo_geral {
+  margin-bottom: 4rem;
+}
+
+.imagem_pivo {
+  width: 100%;
+  height: 25rem;
+  object-fit: cover;
+  position: relative;
+  z-index: 0;
+}
+
+.frase-logo {
+  position: absolute;
+  z-index: 10;
+  font-size: 50px;
+  color: #fff;
+}
+
+.conteudo-principal {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  max-width: 35%;
+  margin: auto;
+  margin-top: 2.5rem;
+  gap: 1.5rem;
+}
+
+.conteudo-principal h2 {
+  font-size: 40px;
+}
+
+.conteudo-principal span {
+  color: #95b128;
+}
+
+.conteudo-principal h3 {
+  margin-bottom: 10px;
+  font-size: 20px;
+  color: #312626;
+}
+
+.paragrafo {
+  margin-top: 20px;
+}
+
+.paragrafo p{
+  font-size: 20px;
+  color: #575757;
+}
