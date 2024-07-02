@@ -9,3 +9,11 @@ body {
   background-color: #ebebeb;
   color: #000000;
 }
+
+h1, h2, h3, h4{
+  color: #312626
+}
+
+p{
+  color: #575757;
+}
