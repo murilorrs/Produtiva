@@ -78,3 +78,55 @@
 .about-container-principal span {
   color: #95b128;
 }
+
+@media (max-width: 768px) {
+
+  .about-container-cinza,
+  .about-container-branco {
+    max-width: 90%;
+    /* Reduz a largura máxima para telas menores */
+    height: auto;
+    /* Altura automática para acomodar conteúdo */
+  }
+
+  .about-container-cinza img,
+  .about-container-branco img {
+    width: 100%;
+    /* Imagens ocupam toda a largura */
+    height: auto;
+    /* Altura automática para manter proporção */
+    max-height: 250px;
+    /* Altura máxima das imagens */
+    margin-top: 20px;
+    /* Espaçamento superior */
+  }
+
+  .about-content {
+    flex-direction: column;
+    /* Altera para coluna em telas menores */
+  }
+
+  .about-text {
+    text-align: center;
+    /* Centraliza texto em telas menores */
+    padding: 10px;
+    /* Espaçamento interno menor */
+  }
+
+  .about-text h3 {
+    font-size: 25px;
+    /* Reduz o tamanho do título */
+  }
+
+  .about-text p {
+    font-size: 18px;
+    /* Reduz o tamanho do texto */
+  }
+
+  .about-titulo {
+    margin-top: 50px;
+    /* Espaçamento superior menor */
+    font-size: 30px;
+    /* Reduz o tamanho do título */
+  }
+}

@@ -23,7 +23,7 @@ const Home = () => {
         </div>
 
         <div className="paragrafo">
-          <h3>dolor</h3>
+          <h3>Dolor</h3>
           <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum eaque perspiciatis porro pariatur aut amet, laboriosam quos cumque ullam? Delectus eum repellendus tempora excepturi aliquid, eaque tenetur et magnam vel!</p>
           <br></br>
           <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum eaque perspiciatis porro pariatur aut amet, laboriosam quos cumque ullam? Delectus eum repellendus tempora excepturi aliquid, eaque tenetur et magnam vel!</p>
