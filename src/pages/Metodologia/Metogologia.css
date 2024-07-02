@@ -1,0 +1,33 @@
+.metodologia-principal{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  height: 800px;
+  padding: 50px;
+}
+
+.metodologia-titulo {
+  margin-bottom: 40px;
+}
+
+.metodologia-titulo h2{
+  font-size: 45px;
+}
+
+.metodologia-titulo p {
+  font-size: 20px;
+}
+
+
+.metodologias{
+  font-size: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 20px;
+}
+
+.metodologias svg {
+  margin-top: 10px;
+  color: #95b128;
+}
