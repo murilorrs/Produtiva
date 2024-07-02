@@ -1,10 +1,10 @@
 import React from "react";
-import Form from '../../modules/Form'
+import Form from '../../modules/Form/Form'
 
 const Careers = () => {
   return(
     <div>
-      <Form/>
+      <Form form_name='Formulário de Cadastro'/>
     </div>
   )
 }

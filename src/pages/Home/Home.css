@@ -49,3 +49,59 @@
   font-size: 20px;
   color: #575757;
 }
+
+/* Estilos para telas menores que 768px (tablets) */
+@media screen and (max-width: 768px) {
+  .conteudo-principal {
+    max-width: 70%;
+    /* Reduz a largura máxima para telas menores */
+  }
+
+  .conteudo-principal h2 {
+    font-size: 2.5rem;
+    /* Reduz o tamanho da fonte para telas menores */
+  }
+
+  .conteudo-principal h3 {
+    font-size: 1.5rem;
+    /* Reduz o tamanho da fonte para telas menores */
+  }
+
+  .paragrafo p {
+    font-size: 1.2rem;
+    /* Reduz o tamanho da fonte para telas menores */
+  }
+}
+
+/* Estilos para telas menores que 600px (móveis) */
+@media screen and (max-width: 600px) {
+  .imagem_pivo {
+    height: 20rem;
+    /* Reduz a altura da imagem para telas menores */
+  }
+
+  .frase-logo {
+    font-size: 2rem;
+    /* Reduz o tamanho da fonte para telas menores */
+  }
+
+  .conteudo-principal {
+    max-width: 90%;
+    /* Reduz ainda mais a largura máxima para telas menores */
+  }
+
+  .conteudo-principal h2 {
+    font-size: 2rem;
+    /* Ajusta o tamanho da fonte para telas menores */
+  }
+
+  .conteudo-principal h3 {
+    font-size: 1.2rem;
+    /* Ajusta o tamanho da fonte para telas menores */
+  }
+
+  .paragrafo p {
+    font-size: 1rem;
+    /* Ajusta o tamanho da fonte para telas menores */
+  }
+}
