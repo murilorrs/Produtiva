@@ -1,3 +1,4 @@
+/* Estilo Geral da Navegação */
 .navegacao {
   display: flex;
   justify-content: space-between;
@@ -9,51 +10,61 @@
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
   width: 100%;
   z-index: 1000;
-
+  padding: 20px 250px;
 }
 
-.navegacao h1 {
+/* Estilo para o Título */
+.navegacao .titulo {
   margin: 0;
   font-size: 29px;
   font-weight: bold;
-  color: #4CAF50;
+  color: #95b128;
+  text-decoration: none;
+
 }
 
-
+/* Estilo para a Lista de Links */
 .navegacao ul {
   display: flex;
   list-style: none;
   gap: 15px;
+  padding: 0;
+  margin: 0;
 }
 
+/* Estilo para os Itens da Lista */
 .navegacao ul li {
-  padding: 10px 0px;
-  cursor: pointer;
+  position: relative;
+  padding: 10px 0;
   margin-right: 10px;
 }
 
-
-.navegacao ul li p {
+/* Estilo para os Links */
+.navegacao ul li a {
   margin: 0;
   font-size: 17px;
-  color: #312626;
+  color: #575757;
   padding: 5px;
-  transition: 300ms ease-in-out;
+  text-decoration: none;
+  /* Remove o sublinhado dos links */
+  transition: color 300ms ease-in-out, background 300ms ease-in-out;
 }
 
-.navegacao ul li:hover p {
-  color: #4CAF50;
+/* Estilo para o Hover dos Links */
+.navegacao ul li a:hover {
+  color: #95b128;
   background: #e6e6e6;
   padding: 5px;
   border-radius: 5px;
 }
 
+/* Estilo para o Indicador de Hover */
 .navegacao ul li::after {
   content: '';
   display: block;
   width: 0;
   height: 1.7px;
-  background: #4caf4f62;
+  background: #95b128;
   transition: width 300ms ease-in-out;
   position: absolute;
   bottom: -2px;
@@ -61,10 +72,12 @@
   transform: translateX(-50%);
 }
 
+/* Expansão do Indicador de Hover */
 .navegacao ul li:hover::after {
   width: 100%;
 }
 
+/* Estilo Responsivo para Telas Menores */
 @media (max-width: 768px) {
   .navegacao {
     flex-direction: column;
@@ -75,6 +88,7 @@
     flex-direction: column;
     gap: 10px;
     width: 100%;
+    padding: 0;
   }
 
   .navegacao ul li {

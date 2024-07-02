@@ -6,28 +6,25 @@ import './nav.css'
 const Nav = () => {
   return(
       <div className="navegacao">
-        <h1 className="teste">PRODUTIVA</h1>
+        <Link className="titulo" to="/">PRODUTIVA</Link>
         <ul>
           <li>
-            <Link to="/blog">Blog</Link>
+            <Link className="links" to="/">HOME</Link>
           </li>
           <li>
-            <Link to="/about">Sobre</Link>
+            <Link className="links" to="/about">SOBRE</Link>
           </li>
           <li>
-            <Link to="/solutions">Solulções</Link>
+            <Link className="links" to="/methodology">METODOLOGIA</Link>
           </li>
           <li>
-            <Link to="/methodology">Metodologia</Link>
+            <Link className="links" to="/solutions">SOLUÇÕES</Link>
           </li>
           <li>
-            <Link to="/careers">Trabalhe Conosco</Link>
+            <Link className="links" to="/careers">TRABALHE CONOSCO</Link>
           </li>
           <li>
-            <Link to="/blog">Blog</Link>
-          </li>
-          <li>
-            <Link to="/contact">Contato</Link>
+            <Link className="links" to="/contact">CONTATO</Link>
           </li>
         </ul>
     </div>

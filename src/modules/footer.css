@@ -5,7 +5,7 @@
   align-items: center;
   height: 200px;
   background-color: rgb(77, 76, 76);
-  color: #fff;
+  color: #d4d4d4;
   padding: 40px;
   gap: 15px;
   width: 100%;
@@ -28,7 +28,7 @@
 
 
 .conteudo-geral ul a {
-  color: #fff;
+  color: #d4d4d4;
   text-decoration: none;
   display: flex;
   align-items: center;
@@ -36,6 +36,7 @@
 
 
 .conteudo-geral ul a h3 {
+  color: #d4d4d4;
   font-size: 16px;
   margin: 0;
 }
@@ -52,6 +53,10 @@
   margin: auto;
 }
 
+.titulo-contato h2{
+  color: #d4d4d4;
+}
+
 .conteudo-contato{
   display: flex;
   justify-content: center;
@@ -63,7 +68,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: #4CAF50;
-  color: #fff;
+  background-color: #95b128;
+  color: #f8f8f8;
   width: 100%;
 }

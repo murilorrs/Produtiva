@@ -12,7 +12,7 @@ const Footer = () => {
     <div>
       <div className="conteudo-geral">
         <div className="titulo-contato">
-        <h2 >Entre em Contato Conosco:</h2>
+        <h2 >Contatos:</h2>
         </div>
 
         <div className="conteudo-contato">
@@ -45,7 +45,7 @@ const Footer = () => {
         </div>
       </div>
         <div className="conteudo-final">
-          Todos os direitos reservados℗
+          Todos os direitos reservados©
         </div>
     </div>
   )
