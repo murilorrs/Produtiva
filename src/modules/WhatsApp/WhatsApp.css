@@ -1,0 +1,22 @@
+.whatsapp {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  z-index: 1000;
+  /* Para garantir que fique acima de outros elementos */
+}
+
+.whatsapp svg {
+  font-size: 40px;
+  color: rgb(70, 231, 30);
+  /* Cor verde do WhatsApp */
+  cursor: pointer;
+  /* Altera o cursor para indicar que é clicável */
+  transition: transform 0.3s ease-in-out;
+  /* Efeito de transição suave */
+}
+
+.whatsapp svg:hover {
+  transform: scale(1.2);
+  /* Efeito de escala ao passar o mouse */
+}
