@@ -9,25 +9,25 @@ const Nav = () => {
         <h1 className="teste">PRODUTIVA</h1>
         <ul>
           <li>
-            <p>Inicio</p>
+            <Link to="/blog">Blog</Link>
           </li>
           <li>
-            <p>Sobre nós</p>
+            <Link to="/about">Sobre</Link>
           </li>
           <li>
-            <p>Soluções</p>
+            <Link to="/solutions">Solulções</Link>
           </li>
           <li>
-            <p>Metodologia</p>
+            <Link to="/methodology">Metodologia</Link>
           </li>
           <li>
-            <p>blog</p>
+            <Link to="/careers">Trabalhe Conosco</Link>
           </li>
           <li>
-            <p>Trabalhe Conosco</p>
+            <Link to="/blog">Blog</Link>
           </li>
           <li>
-            <p>Contato</p>
+            <Link to="/contact">Contato</Link>
           </li>
         </ul>
     </div>
