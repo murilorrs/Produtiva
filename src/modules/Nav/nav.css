@@ -83,6 +83,27 @@
   cursor: pointer;
 }
 
+@media (max-width: 1270px){
+  .navegacao{
+    padding: 20px 100px;
+  }
+}
+
+@media (max-width: 970px) {
+  .navegacao {
+    padding: 20px 50px;
+  }
+}
+
+@media (max-width: 850px) {
+  .navegacao {
+    padding: 20px 20px;
+  }
+  .navegacao ul li a{
+    font-size: 15px;
+  }
+}
+
 /* Estilo para Telas Menores */
 @media (max-width: 768px) {
   .navegacao {

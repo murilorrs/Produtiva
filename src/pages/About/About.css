@@ -1,3 +1,4 @@
+/* Estilos gerais */
 .about-container-principal {
   display: flex;
   justify-content: center;
@@ -7,7 +8,8 @@
   padding: 2rem;
 }
 
-.about-container-cinza {
+.about-container-cinza,
+.about-container-branco {
   display: flex;
   flex-direction: row;
   background-color: #ebeaea;
@@ -21,16 +23,7 @@
 }
 
 .about-container-branco {
-  display: flex;
-    flex-direction: row;
-    background-color: #fff;
-    max-width: 60%;
-    margin: 0 auto;
-    margin-top: 50px;
-    align-items: center;
-    border-radius: 20px;
-    height: 500px;
-    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+  background-color: #fff;
 }
 
 .about-content {
@@ -79,54 +72,129 @@
   color: #95b128;
 }
 
+/* Media query para telas médias */
+@media (max-width: 1290px) {
+
+  .about-container-cinza,
+  .about-container-branco {
+    max-width: 80%;
+    /* Ajusta a largura máxima */
+    height: auto;
+    /* Ajusta a altura */
+    flex-direction: column;
+    /* Altera para coluna */
+    text-align: center;
+    padding: 20px;
+  }
+
+  .about-content {
+    flex-direction: column;
+    /* Altera a direção para coluna */
+    align-items: center;
+  }
+
+  .about-image {
+    max-width: 80%;
+    /* Ajusta a largura máxima */
+    margin-top: 20px;
+    /* Espaçamento superior */
+  }
+
+  .about-text {
+    text-align: center;
+    padding: 10px;
+  }
+
+  .about-text h3 {
+    font-size: 28px;
+    /* Ajusta o tamanho do texto */
+  }
+
+  .about-text p {
+    font-size: 18px;
+  }
+
+  .about-titulo {
+    margin-top: 80px;
+    font-size: 32px;
+  }
+}
+
+/* Media query para telas pequenas */
 @media (max-width: 768px) {
 
   .about-container-cinza,
   .about-container-branco {
     max-width: 90%;
-    /* Reduz a largura máxima para telas menores */
+    /* Reduz a largura máxima */
     height: auto;
-    /* Altura automática para acomodar conteúdo */
-  }
-
-  .about-container-cinza img,
-  .about-container-branco img {
-    width: 100%;
-    /* Imagens ocupam toda a largura */
-    height: auto;
-    /* Altura automática para manter proporção */
-    max-height: 250px;
-    /* Altura máxima das imagens */
-    margin-top: 20px;
-    /* Espaçamento superior */
+    flex-direction: column;
+    /* Altera a direção para coluna */
+    text-align: center;
   }
 
   .about-content {
     flex-direction: column;
-    /* Altera para coluna em telas menores */
+    /* Altera para coluna */
   }
 
   .about-text {
     text-align: center;
-    /* Centraliza texto em telas menores */
     padding: 10px;
-    /* Espaçamento interno menor */
   }
 
   .about-text h3 {
     font-size: 25px;
-    /* Reduz o tamanho do título */
   }
 
   .about-text p {
     font-size: 18px;
-    /* Reduz o tamanho do texto */
+  }
+
+  .about-image {
+    width: 100%;
+    /* Ajusta a largura */
+    height: auto;
+    max-height: 250px;
+    margin-top: 20px;
   }
 
   .about-titulo {
     margin-top: 50px;
-    /* Espaçamento superior menor */
     font-size: 30px;
-    /* Reduz o tamanho do título */
+  }
+}
+
+/* Media query para telas muito pequenas */
+@media (max-width: 480px) {
+
+  .about-container-cinza,
+  .about-container-branco {
+    max-width: 100%;
+    /* Reduz a largura máxima */
+    padding: 10px;
+  }
+
+  .about-text {
+    padding: 5px;
+    /* Reduz o espaçamento */
+  }
+
+  .about-text h3 {
+    font-size: 22px;
+  }
+
+  .about-text p {
+    font-size: 16px;
+  }
+
+  .about-image {
+    max-width: 100%;
+    max-height: 200px;
+  }
+
+  .about-titulo {
+    margin-top: 30px;
+    font-size: 28px;
   }
 }
