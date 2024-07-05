@@ -39,11 +39,7 @@ const Nav = () => {
             CONTATO
           </Link>
         </li>
-        <li>
-          <Link className="links" to="/careers">
-            TRABALHE CONOSCO
-          </Link>
-        </li>
+
       </ul>
     </div>
   );
